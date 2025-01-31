@@ -28,59 +28,67 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
-                }
-            }
+                        "nav-btn-primary": "#179800",
+                    },
+                },
+            },
         }
     </script>
 </head>
 
 <body>
-    <header>
+    <header class=" font-sora">
 
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="pr-3 py-6">
-                        <img src="assets/logo-header.png" alt="">
-                    </div>
-                    
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-
-                        <li><a>Product</a></li>
-                        <li><a>Service</a></li>
-                        <li><a>Contact us</a></li>
-
-                    </ul>
-                </div>
-                <div class="navbar-end space-x-4">
-                    <img src="assets/search-icon.png" alt="">
-                    <img src="assets/icons8-shopping-cart-26.png" alt="">
-                    <a class="btn px-8 py-3">Login</a>
-                    <a class="btn py-3 px-8">Register</a>
-                    <div class="dropdown rotate-180">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+        <nav class=" border-2 border-[#179800] lg:border-none">
+            <div class="md:container md:mx-auto">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <div class="pl-3 ">
+                            <img src="assets/logo-header.png" alt="">
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow rotate-180">
+
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-xl">
+
                             <li><a>Product</a></li>
                             <li><a>Service</a></li>
                             <li><a>Contact us</a></li>
 
-
                         </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="hidden lg:flex space-x-4">
+                            <div class="space-x-5 flex pe-10 py-2">
+                                <img src="assets/search-icon.png" alt="">
+                                <img src="assets/icons8-shopping-cart-26.png" alt="">
+                            </div>
+                            <a class="btn px-8 text-xl border-2 border-[#179800]">Login</a>
+                            <a class="btn px-8 text-white bg-nav-btn-primary text-xl">Register</a>
+                        </div>
+                        <div class="dropdown rotate-180">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                                <img src="assets/menu-icon.svg" alt="">
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow rotate-180 text-xl">
+                                <li><a>Product</a></li>
+                                <li><a>Service</a></li>
+                                <li><a>Contact us</a></li>
+
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </nav>
-
+        <div class="container mx-auto max-w-5xl text-center pt-20 ">
+            <h1 class="font-semibold text-[3.65rem]">Freshness <span class="text-[#179800]">You Can<br>Count</span> On,
+                Prices You’ll Love!</h1>
+            <p class="text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples,
+                we’ve got you covered every day!</p>
+        </div>
     </header>
 </body>
 
